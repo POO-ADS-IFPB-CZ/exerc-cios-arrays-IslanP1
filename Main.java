@@ -1,4 +1,5 @@
 import Questoes.Questao01.Fibonacci;
+import Questoes.Questao02.Aluno;
 
 import java.util.List;
 
@@ -12,5 +13,13 @@ public class Main {
 
         System.out.println("Sequência de Fibonnaci: ");
         System.out.println(resultado);
+
+        //Questão 02
+        Aluno alunos = new Aluno(10);
+        alunos.setNotas();
+        alunos.getTotalNotas();
+        System.out.printf("Média das notas dos alunos: %.2f\n", alunos.calcularMedia());
+        alunos.calcularMedia();
+        alunos.nivelMedia();
     }
 }
