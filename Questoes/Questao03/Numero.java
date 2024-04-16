@@ -10,15 +10,13 @@ public class Numero {
         numeros = new ArrayList<>();
     }
 
-    public void setNumeros() {
-        Scanner scanner = new Scanner(System.in);
+    public void setNumeros(Scanner scanner) {
         int numero = 0;
         while (numero >= 0) {
             System.out.printf("Digite um número inteiro: ");
             numero = scanner.nextInt();
             numeros.add(numero);
         }
-        scanner.close();
     }
 
     public int getTotalNumerosDigitados() {

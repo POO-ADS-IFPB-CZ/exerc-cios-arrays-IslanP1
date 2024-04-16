@@ -25,13 +25,11 @@ public class Aluno {
         return notas;
     }
 
-    public void setNotas() {
-        Scanner scanner = new Scanner(System.in);
+    public void setNotas(Scanner scanner) {
         for (int k = 0; k < totalNotas; k++) {
             System.out.printf("Digite a nota %d: ", k);
             notas.add(scanner.nextFloat());
         }
-        scanner.close();
     }
 
     public float calcularMedia() {
